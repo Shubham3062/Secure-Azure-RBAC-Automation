@@ -1,0 +1,28 @@
+{
+  "vm-reader-dev": {
+    "display_name": "Virtual Machine Reader - Dev",
+    "description": "Read-only access to all VMs in the Dev environment",
+    "allowed_environments": ["dev"],
+    "allowed_employee_types": ["intern", "full_time"],
+    "role_definition_name": "Virtual Machine Reader",
+    "scope_type": "resource_group"
+  },
+
+  "storage-reader": {
+    "display_name": "Storage Blob Reader",
+    "description": "Read access to storage accounts in Dev and Test",
+    "allowed_environments": ["dev", "test"],
+    "allowed_employee_types": ["full_time"],
+    "role_definition_name": "Storage Blob Data Reader",
+    "scope_type": "resource_group"
+  },
+
+  "app-contributor": {
+    "display_name": "Application Contributor",
+    "description": "Full Contributor access to application resources",
+    "allowed_environments": ["dev", "test"],
+    "allowed_employee_types": ["full_time"],
+    "role_definition_name": "Contributor",
+    "scope_type": "resource_group"
+  }
+}

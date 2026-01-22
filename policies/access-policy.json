@@ -1,0 +1,24 @@
+{
+  "employee_type_rules": {
+    "intern": {
+      "max_duration_days": 30,
+      "allowed_roles": ["vm-reader-dev"]
+    },
+    "full_time": {
+      "max_duration_days": 90,
+      "allowed_roles": ["vm-reader-dev", "storage-reader", "app-contributor"]
+    }
+  },
+  "environment_rules": {
+    "dev": {
+      "allowed_roles": ["vm-reader-dev", "storage-reader", "app-contributor"]
+    },
+    "test": {
+      "allowed_roles": ["storage-reader", "app-contributor"]
+    },
+    "prod": {
+      "allowed_roles": ["app-contributor"]
+    }
+  },
+  "justification_required": true
+}

@@ -1,0 +1,45 @@
+name: Terraform RBAC Automation
+
+on:
+  push:
+    paths:
+      - 'access-requests/approved/**'
+      - 'terraform/**'
+      - 'policies/**'
+      - 'role-catalog/**'
+
+jobs:
+  validate-and-apply:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python (for validator script)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Validate approved requests
+        run: python scripts/validate_request.py --approved_folder access-requests/approved/
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.12.1
+
+      - name: Terraform Init
+        working-directory: terraform/
+        run: terraform init
+
+      - name: Terraform Plan
+        working-directory: terraform/
+        run: terraform plan -out=tfplan
+
+      - name: Terraform Apply
+        working-directory: terraform/
+        run: terraform apply -auto-approve tfplan

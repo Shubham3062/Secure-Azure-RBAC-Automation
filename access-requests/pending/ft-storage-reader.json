@@ -1,0 +1,20 @@
+{
+  "request_id": "REQ-2026-002",
+  "request_type": "rbac_access",
+  "requester": {
+    "name": "Daniela Murrilo",
+    "email": "daniela@company.com",
+    "employee_type": "full_time",
+    "department": "cloud-platform"
+  },
+  "access": {
+    "role_key": "storage-reader",
+    "environment": "test",
+    "duration_days": 60
+  },
+  "justification": "Need read access to storage accounts for migration testing",
+  "metadata": {
+    "requested_at": "2026-01-22T11:00:00Z",
+    "ticket_reference": "SNOW-1002"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "request_id": "REQ-2026-001",
+  "request_type": "rbac_access",
+  "requester": {
+    "name": "Shubham Shah",
+    "email": "shubham@company.com",
+    "employee_type": "intern",
+    "department": "cloud-platform"
+  },
+  "access": {
+    "role_key": "vm-reader-dev",
+    "environment": "dev",
+    "duration_days": 30
+  },
+  "justification": "Need read-only access to VMs in dev for debugging application logs",
+  "metadata": {
+    "requested_at": "2026-01-22T10:15:00Z",
+    "ticket_reference": "SNOW-1001"
+  }
+}
