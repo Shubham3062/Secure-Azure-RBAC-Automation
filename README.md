@@ -6,10 +6,10 @@ In real-world cloud environments, **access control** is one of the most critical
 
 Common problems that teams are facing:
 
-Manual role assignments in Azure Portal (error‑prone & non‑auditable)
-No approval trail for *who requested what and why*
-Over‑privileged users (security risk)
-No automation or consistency across environments
+* Manual role assignments in Azure Portal (error‑prone & non‑auditable)
+* No approval trail for *who requested what and why*
+* Over‑privileged users (security risk)
+* No automation or consistency across environments
 
 This project solves **all of the above** using a **policy‑driven, approval‑based, Terraform‑powered RBAC automation system**.
 
@@ -17,11 +17,11 @@ This project solves **all of the above** using a **policy‑driven, approval‑b
 
 This project provides:
 
-Controlled RBAC access using **pre‑approved JSON requests**
-Group‑based access (no direct user‑to‑role assignment)
-Policy validation before Terraform runs
-CI/CD‑driven enforcement using GitHub Actions
-Clean audit trail (who requested, who approved, when, why)
+* Controlled RBAC access using **pre‑approved JSON requests**
+* Group‑based access (no direct user‑to‑role assignment)
+* Policy validation before Terraform runs
+* CI/CD‑driven enforcement using GitHub Actions
+* Clean audit trail (who requested, who approved, when, why)
 
 In short:
 
