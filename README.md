@@ -171,3 +171,10 @@ terraform plan
 
 ### Feel free to fork, adapt, and extend.
 
+<img width="1918" height="1196" alt="Screenshot 2026-01-22 170715" src="https://github.com/user-attachments/assets/70402356-a3c9-4cc1-a5f3-e2a57bc640d4" />
+<img width="1919" height="1123" alt="Screenshot 2026-01-22 184300" src="https://github.com/user-attachments/assets/b077e068-719e-40e0-83e5-5d638b1fcc4d" />
+<img width="1917" height="1199" alt="Screenshot 2026-01-22 214811" src="https://github.com/user-attachments/assets/9509f679-74b4-4999-9157-4991a14082ff" />
+<img width="1919" height="1188" alt="Screenshot 2026-01-22 224257" src="https://github.com/user-attachments/assets/93a336d6-0fd4-4b5d-bd83-2a9f4c90f3d1" />
+
+
+
